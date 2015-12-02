@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="top|center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="0dp"
+            android:background="#20b2aa"
+            android:text="브랜드"
+            android:textSize="14sp" />
+        
+         <Button
+            android:id="@+id/space"
+            android:layout_width="5dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="0dp"
+            android:background="#20b2aa"
+            android:text="|"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/system"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="0dp"
+            android:background="#20b2aa"
+            android:text="멤버십제도" 
+            android:textSize="14sp"/>
+        
+             <Button
+            android:id="@+id/space"
+            android:layout_width="5dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="0dp"
+            android:background="#20b2aa"
+            android:text="|"
+            android:textSize="14sp" />
+        
+        <Button
+            android:id="@+id/gomap"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="0dp"
+            android:background="#20b2aa"
+            android:text="이용후기" 
+            android:textSize="14sp"/>
+           
+        </LinearLayout>
+       <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/buttons">
+   	   <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:adjustViewBounds="true"
+        />
+        </ScrollView>
+   
+</RelativeLayout>
